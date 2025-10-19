@@ -70,12 +70,12 @@ disallow_untyped_defs = false
 
 [tool.pytest.ini_options]
 minversion = "6.0"
-addopts = "--cov=math_lib --cov-report=term-missing --cov-report=html"
+addopts = "--cov=main --cov-report=term-missing --cov-report=html"
 testpaths = ["tests"]
 python_files = ["test_*.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
 
 [tool.coverage.run]
-source = ["math_lib"]
+source = ["."]
 omit = ["*/tests/*", "*/test_*"]
